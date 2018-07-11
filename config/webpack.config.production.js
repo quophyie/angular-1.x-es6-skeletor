@@ -15,6 +15,7 @@ const config = {
   entry: [
     `${APP_DIR}/app` // Your appʼs entry point
   ],
+  mode: 'production',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js', // //this is the default name, so you can skip it

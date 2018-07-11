@@ -17,6 +17,7 @@ const config = {
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     `${APP_DIR}/index` // Your appʼs entry point
   ],
+  mode: 'development',
   devtool: 'inline-source-map',
   output: {
     path: BUILD_DIR,
