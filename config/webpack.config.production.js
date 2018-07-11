@@ -30,7 +30,7 @@ const config = {
     extensions: ['*', '.js']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /[\\\/]bower_components[\\\/]modernizr[\\\/]modernizr\.js$/,
         loader: 'imports-loader?this=>window!exports?window.Modernizr'
@@ -71,7 +71,7 @@ const config = {
   },
   plugins: [
     // new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       inject: 'body',

@@ -1,21 +1,21 @@
 {
-  "name": "angular-seed",
+  "name": "angular-1.x-es6-skeletor",
   "private": true,
   "version": "0.0.0",
   "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": "https://github.com/quophyie/angular-1.x-es6-skeletor",
   "license": "MIT",
   "devDependencies": {
     "angular-mocks": "^1.5.8",
-    "babel-core": "^6.16.0",
-    "babel-loader": "^6.2.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-react-transform": "^2.0.2",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0",
-    "babel-preset-react": "^6.16.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
-    "babel-preset-stage-0": "^6.16.0",
-    "babel-runtime": "^6.11.6",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "bower": "^1.7.7",
     "css-loader": "^0.25.0",
     "eslint": "^3.11.0",
@@ -25,7 +25,7 @@
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-react": "^6.3.0",
     "eslint-plugin-standard": "^2.0.1",
-    "html-webpack-plugin": "^2.22.0",
+    "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.9.0",
     "istanbul": "^0.4.5",
     "istanbul-instrumenter-loader": "^1.0.0",
@@ -49,8 +49,8 @@
     "sass-loader": "^4.0.2",
     "standard": "^8.6.0",
     "style-loader": "^0.13.1",
-    "webpack": "^2.1.0-beta.25",
-    "webpack-dev-server": "^1.16.1"
+    "webpack": "^4.15.1",
+    "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
     "start_production": "export NODE_ENV=production && npm run serve",
@@ -68,7 +68,7 @@
     "angular": "^1.5.8",
     "angular-loader": "^1.5.8",
     "angular-route": "^1.5.8",
-    "angular-ui-router": "^0.3.2",
+    "angular-ui-router": "1.0.18",
     "create-error": "^0.3.1"
   }
 }
