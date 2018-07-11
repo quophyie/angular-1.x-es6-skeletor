@@ -62,7 +62,9 @@
     "build": "npm run clean_dist_dir && npm run standard && npm run webpack",
     "build_nolinting": "npm run clean_dist_dir && npm run webpack",
     "serve": "node server",
-    "standard": "standard --verbose"
+    "standard": "standard --verbose",
+    "test": "./node_modules/karma/bin/karma start --singleRun=false",
+    "test-with-single-run": "./node_modules/karma/bin/karma start --singleRun=true"
   },
   "dependencies": {
     "angular": "^1.5.8",
