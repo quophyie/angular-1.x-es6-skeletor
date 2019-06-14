@@ -2,7 +2,7 @@
 // Generated on Sat Nov 19 2016 14:40:11 GMT+0000 (GMT)
 const webpack = require('webpack')
 const webpackConfig = require('./config/webpack.config.dev')
-webpackConfig.entry = {}
+// webpackConfig.entry = {}
 
 // As Hot Module Replacement (HMR) does not work with Karma when using webpack, we remove the
 // HMR plugin (i.e. HotModuleReplacementPlugin) from the list of webpack plugins
@@ -95,6 +95,7 @@ module.exports = function (config) {
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false,
+    // singleRun: true,
 
     // Concurrency level
     // how many browser should be started simultaneous

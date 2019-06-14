@@ -17,6 +17,7 @@ const config = {
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     `${APP_DIR}/index` // Your appʼs entry point
   ],
+  mode: 'development',
   devtool: 'inline-source-map',
   output: {
     path: BUILD_DIR,
@@ -33,7 +34,7 @@ const config = {
     extensions: ['*', '.js']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /[\\\/]bower_components[\\\/]modernizr[\\\/]modernizr\.js$/,
         loader: 'imports-loader?this=>window!exports?window.Modernizr'
@@ -83,7 +84,7 @@ const config = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       inject: 'body',
